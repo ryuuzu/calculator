@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap");
+
+.container {
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.calculator {
+	background-color: #aaa;
+	min-width: 350px;
+	margin: 0 auto;
+	padding: 50px;
+	border: 1px black solid;
+	border-radius: 28px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input:nth-child(1){
+	font-size: 20px;
+}
+
+.input:nth-child(2){
+	font-size: 30px;
+}
+
+.input {
+	background-color: azure;
+    color: black;
+	padding: 5px 10px;
+    border: none;
+	font-family: "Noto Sans Math", sans-serif;
+	text-align: right;
+}
+
+button {
+	font-size: 30px;
+    background-color: azure;
+    padding: 15px;
+	margin: 0;
+	font-family: "Noto Sans Math", sans-serif;
+}
+.controls {
+	display: flex;
+	gap: 30px;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.controls .correction,
+.controls .buttons {
+	display: flex;
+	gap: 15px;
+}
+
+.controls .correction button {
+	width: calc(50% - 2px);
+}
+
+.controls .buttons button {
+	width: calc(25% - 3px);
+}
+
+.controls .correction button:hover, .controls .buttons button:hover {
+    background-color: wheat;
+    transition: 200ms ease-in-out;
+}
+
+button {
+	border: 2px black solid;
+	border-radius: 5px;
+}
